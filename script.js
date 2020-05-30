@@ -70,10 +70,6 @@ btnChange.click(function() {
 })
 
 
-function getRandom() {
-  return randomIndex = Math.floor(Math.random() * 11);
-}
-
 btnAutoInputs.click(function() {
   var rndVar1List = ['дедушка', 'крокодильчик', 'отец', 'смурф','король','вор','картежник','охотник','снегирь','мужик','волшебник','дворянин']
   var rndVar2List = ['бабушка', 'королева', 'стрекоза', 'актриса','ведьма','целительница','старуха','царевна','принцесса','крокодилица','панда','бревно']
@@ -81,11 +77,23 @@ btnAutoInputs.click(function() {
   var rndVar4List = ['яичко', 'лицо с разбега', 'идею', 'кучу','стену','дверь','тортик','носилки','канделябр','мужика','зеркало','замок']
   var rndVar5List = ['мишка', 'слонишка', 'зебришка', 'старуха','принцеска','воришка','алкашка','тень','повариха','бегунья','спортсменка','мурашка']
   var rndVar6List = ['хвостиком', 'ручкой', 'головой', 'головкой','ножкой','языком','волосом','веером','гривой','пальцем','сумочкой','крылом']
-  var rndVarSList = ['ко-ко-ко-ко-ко-ко!!', '№:?"%?;!?%;?"!;:*?!%;', 'Ти шо ти шо, ай-яй-яй, горе то яке', 'None','nonetype object is not subscriptable','*нецензурная брань*','ля, шо це таке то ото робиться??? людоньки','В міліцію звоніть! бира','опчики брики и в дамки','кондьохаем веселей','упс, вот это пападос', 'kudkudah!']
+  var rndVar7List = ['ко-ко-ко-ко-ко-ко!!', '№:?"%?;!?%;?"!;:*?!%;', 'Ти шо ти шо, ай-яй-яй, горе то яке', 'None','nonetype object is not subscriptable','*нецензурная брань*','ля, шо це таке то ото робиться??? людоньки','В міліцію звоніть! бира','опчики брики и в дамки','кондьохаем веселей','упс, вот это пападос', 'kudkudah!']
 
- // var randomIndex = Math.floor(Math.random() * 11);
-  var randomIndex = getRandom(); 
-  var rndVar1 = rndVar1List.randomIndex;
+  var randomIndex = Math.floor(Math.random() * 11);
+  var randomIndex2 = Math.floor(Math.random() * 11);
+  var randomIndex3 = Math.floor(Math.random() * 11);
+  var randomIndex4 = Math.floor(Math.random() * 11);
+  var randomIndex5 = Math.floor(Math.random() * 11);
+  var randomIndex6 = Math.floor(Math.random() * 11);
+  var randomIndex7 = Math.floor(Math.random() * 11);
+
+  var rndVar1 = rndVar1List[randomIndex];
+  var rndVar2 = rndVar2List[randomIndex2];
+  var rndVar3 = rndVar3List[randomIndex3];
+  var rndVar4 = rndVar4List[randomIndex4];
+  var rndVar5 = rndVar5List[randomIndex5];
+  var rndVar6 = rndVar6List[randomIndex6];
+  var rndVar7 = rndVar7List[randomIndex7];
  // var rndVar1List2 = ['дедушка', 'крокодильчик', 'отец', 'смурф','король','вор','картежник','охотник','снегирь','мужик','волшебник','дворянин']
  // var randomIndex2 = Math.floor(Math.random() * 11);
  // var rndVar2 = rndVar1List2[randomIndex2];
@@ -95,5 +103,11 @@ btnAutoInputs.click(function() {
  
  // $('.var2').val(rndVar2);
   $('.var1').val(rndVar1);
-
+  $('.var2').val(rndVar2);
+  $('.var3').val(rndVar3);
+  $('.var4').val(rndVar4);
+  $('.var5').val(rndVar5);
+  $('.var6').val(rndVar6);
+  $('.var7').val(rndVar7);
+  $('.speach').val(rndVar7);
 })
